@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 046c6b49e6a203a4091e2a12a6df71e5, type: 3}
+  m_Name: Battle_1
+  m_EditorClassIdentifier: 
+  mapCfg:
+    chars:
+    - {fileID: 11400000, guid: 5bc8be1543e57ec499bca0d554dd3276, type: 2}
+    - {fileID: 11400000, guid: 1357cac23fbfac1449692ed5455ac77c, type: 2}
+    - {fileID: 11400000, guid: c05679ac81e9c02498345399a82f906c, type: 2}
+    - {fileID: 11400000, guid: 744ee4904de04864a90bec3db9b2d02e, type: 2}
+    enemys:
+    - {fileID: 11400000, guid: 9b3a52901b5115c41ac2201277d8a94d, type: 2}
+    mapName: "\u6218\u65971"
+    sceneName: Battle_1
+    mainCamPos: {x: 0, y: 0, z: -10}
+    mainCamRota: {x: 0, y: 0, z: 0}
+    cameraMainSize: 5
+    cameraMainCloseSize: 1.7
+    bossPos: {x: 5.32, y: 0.4, z: 0}
+    staffPos: []
+    Ypos: {x: -6.347, y: 1.02, z: 0}
+    Xpos: {x: -7.66, y: -0.2, z: 0}
+    Bpos: {x: -3.86, y: 1, z: 0}
+    Apos: {x: -5.171, y: -0.301, z: 0}
+    CharBatPos: {x: -0.61, y: 0.4, z: 0}
+    EnemyBatPos: {x: 0.87, y: 0.4, z: 0}

@@ -1,0 +1,739 @@
+fileFormatVersion: 2
+guid: 1bd3dda0a6566f04fa1385485e8eab29
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: AfterIcon_7_0
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 922
+        width: 3
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d77e5566469547499ae653955ee58a9
+      internalID: -846587916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AfterIcon_7_1
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 843
+        width: 60
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94578bb4ea0e2d54291b94c457a1a45e
+      internalID: 1516447388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AfterIcon_7_2
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 776
+        width: 210
+        height: 241
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e7413898dc8f8c4c8404d4b6b2207d1
+      internalID: -562847175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AfterIcon_7_3
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 829
+        width: 84
+        height: 133
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c93b4e94c3d8114c80ca9f9079a2015
+      internalID: 1046101977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AfterIcon_7_4
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 952
+        width: 20
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5be22aae14d69644e9afa8ddc3d161f4
+      internalID: 1204217834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AfterIcon_7_5
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 778
+        width: 208
+        height: 234
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0136a0f39421ce54a9e7f0048a4f6695
+      internalID: -891759237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AfterIcon_7_6
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 786
+        width: 219
+        height: 222
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 245211ace62a0e84fa1bac9c45bbd625
+      internalID: 337570395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AfterIcon_7_7
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 798
+        width: 178
+        height: 201
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e901b07c0797e6140863da1b60984688
+      internalID: -1012715936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AfterIcon_7_8
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 896
+        width: 24
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5f787a7af348fe4ea5b473c52f3e410
+      internalID: 1448044944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AfterIcon_7_9
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 858
+        width: 40
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47057bf49f1bd31439548e9187fef407
+      internalID: 316134426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AfterIcon_7_10
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 909
+        width: 88
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8c8f6308e5a0ed48aedb853547ea9f5
+      internalID: 642901639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AfterIcon_7_11
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 835
+        width: 43
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10f0b032d7bb4ce4f83eb166d9a81d62
+      internalID: 1137825454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AfterIcon_7_12
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 894
+        width: 9
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c7d7d8c37f3aa64c90a7cbae8eb3b86
+      internalID: -368128004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AfterIcon_7_13
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 892
+        width: 9
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 225f046f08da2c449837580cafbed2cf
+      internalID: -1846041787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AfterIcon_7_14
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 825
+        width: 28
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76e264bea4b72e14baedadaca01d1320
+      internalID: -204586476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AfterIcon_7_15
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 802
+        width: 147
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f36150d1fa0b7449974a7d109a932b4
+      internalID: 630117752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AfterIcon_7_16
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 512
+        width: 229
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c5ca7ab9db819344ad1b15a9e2e3fb9
+      internalID: -687612685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AfterIcon_7_17
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 512
+        width: 229
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10a884650da0c5242ab4b0183d1da850
+      internalID: 1227732876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AfterIcon_7_18
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 512
+        width: 229
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 910445b12e489e348891427e3b10face
+      internalID: 158325348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AfterIcon_7_19
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 512
+        width: 229
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef1df624be57d2047a6bc03c18a7ff1c
+      internalID: 520245175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AfterIcon_7_20
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 311
+        width: 147
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38ac8d17b5179134fbbff47ca2a415d9
+      internalID: 1415760381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AfterIcon_7_21
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 375
+        width: 112
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 614d50430bf577a4a9f09472c93b7e89
+      internalID: -1392280256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AfterIcon_7_22
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 288
+        width: 191
+        height: 193
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58b04c4c2fb64104ab6f7dee6c2d237c
+      internalID: -1705905137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AfterIcon_7_23
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 290
+        width: 187
+        height: 188
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4fac4e9facde9f49ba7d1c2d365f13c
+      internalID: -835474564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AfterIcon_7_24
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 269
+        width: 230
+        height: 230
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb4ae42fe4f54f349825fb37f5af5dd3
+      internalID: -979742149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AfterIcon_7_25
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 40
+        width: 137
+        height: 177
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cb5a36d8841a5b4692a81e5a5e0f66e
+      internalID: 975998024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AfterIcon_7_26
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 31
+        width: 153
+        height: 194
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b4634d0a114f4048865b10e56ee8d7f
+      internalID: 1772023156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AfterIcon_7_27
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 0
+        width: 512
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23a1a326d086ebb45900b4bb164b46f6
+      internalID: 1835720471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 2400d4b9ae9605c48873568ce2f7ac35
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      AfterIcon_7_0: -846587916
+      AfterIcon_7_1: 1516447388
+      AfterIcon_7_10: 642901639
+      AfterIcon_7_11: 1137825454
+      AfterIcon_7_12: -368128004
+      AfterIcon_7_13: -1846041787
+      AfterIcon_7_14: -204586476
+      AfterIcon_7_15: 630117752
+      AfterIcon_7_16: -687612685
+      AfterIcon_7_17: 1227732876
+      AfterIcon_7_18: 158325348
+      AfterIcon_7_19: 520245175
+      AfterIcon_7_2: -562847175
+      AfterIcon_7_20: 1415760381
+      AfterIcon_7_21: -1392280256
+      AfterIcon_7_22: -1705905137
+      AfterIcon_7_23: -835474564
+      AfterIcon_7_24: -979742149
+      AfterIcon_7_25: 975998024
+      AfterIcon_7_26: 1772023156
+      AfterIcon_7_27: 1835720471
+      AfterIcon_7_3: 1046101977
+      AfterIcon_7_4: 1204217834
+      AfterIcon_7_5: -891759237
+      AfterIcon_7_6: 337570395
+      AfterIcon_7_7: -1012715936
+      AfterIcon_7_8: 1448044944
+      AfterIcon_7_9: 316134426
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
