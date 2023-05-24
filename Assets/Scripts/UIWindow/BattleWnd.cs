@@ -39,10 +39,21 @@ namespace TripleBattle
         private Sprite blockA, blockB, blockX, blockY;
         private CanvasGroup[] bsCgs;
         private Image[] bsImgs;
+        private Image[] actionList1CharImgs;
+        private Image[] actionList1EnemyImgs;
+        private Image[] actionList2CharImgs;
+        private Image[] actionList2EnemyImgs;
+        private Image[] actionList3CharImgs;
+        private Image[] actionList3EnemyImgs;
+        private Image[] actionList4CharImgs;
+        private Image[] actionList4EnemyImgs;
+
+        
         protected override void InitWnd()
         {
             base.InitWnd();
             InitRefs();
+            ResetActLstImg();
             RegTouchEvts();
             ShowUI();
         }
@@ -50,18 +61,105 @@ namespace TripleBattle
         {
             bsCgs = new CanvasGroup[9];
             bsImgs = new Image[9];
-            for (int i = 0; i < blockItems.childCount; i++)
+            for (int i = 0; i < blockItems.childCount; i++)//blockItems的子对象是
             {
                 bsCgs[i] = blockItems.GetChild(i).GetComponent<CanvasGroup>();
                 bsImgs[i] = blockItems.GetChild(i).Find("Image").GetComponent<Image>();
             }
+            #region GetActionListImages
+            actionList1CharImgs = new Image[4];
+            actionList1EnemyImgs = new Image[4];
+            actionList2CharImgs = new Image[4];
+            actionList2EnemyImgs = new Image[4];
+            actionList3CharImgs = new Image[4];
+            actionList3EnemyImgs = new Image[4];
+            actionList4CharImgs = new Image[4];
+            actionList4EnemyImgs = new Image[4];
 
+            actionList1CharImgs[0] = list1.transform.Find("Character/Bg/imgAtker").GetComponent<Image>();
+            actionList1CharImgs[1] = list1.transform.Find("Character/Bg2/imgFoller").GetComponent<Image>();
+            actionList1CharImgs[2] = list1.transform.Find("Character/Bg3/imgFoller").GetComponent<Image>();
+            actionList1CharImgs[3] = list1.transform.Find("Character/Bg4/imgFoller").GetComponent<Image>();
+            actionList1EnemyImgs[0] = list1.transform.Find("Enemy/Bg/imgAtker").GetComponent<Image>();
+            actionList1EnemyImgs[1] = list1.transform.Find("Enemy/Bg2/imgFoller").GetComponent<Image>();
+            actionList1EnemyImgs[2] = list1.transform.Find("Enemy/Bg3/imgFoller").GetComponent<Image>();
+            actionList1EnemyImgs[3] = list1.transform.Find("Enemy/Bg4/imgFoller").GetComponent<Image>();
+
+            actionList2CharImgs[0] = list2.transform.Find("Character/Bg/imgAtker").GetComponent<Image>();
+            actionList2CharImgs[1] = list2.transform.Find("Character/Bg2/imgFoller").GetComponent<Image>();
+            actionList2CharImgs[2] = list2.transform.Find("Character/Bg3/imgFoller").GetComponent<Image>();
+            actionList2CharImgs[3] = list2.transform.Find("Character/Bg4/imgFoller").GetComponent<Image>();
+            actionList2EnemyImgs[0] = list2.transform.Find("Enemy/Bg/imgAtker").GetComponent<Image>();
+            actionList2EnemyImgs[1] = list2.transform.Find("Enemy/Bg2/imgFoller").GetComponent<Image>();
+            actionList2EnemyImgs[2] = list2.transform.Find("Enemy/Bg3/imgFoller").GetComponent<Image>();
+            actionList2EnemyImgs[3] = list2.transform.Find("Enemy/Bg4/imgFoller").GetComponent<Image>();
+
+            actionList3CharImgs[0] = list3.transform.Find("Character/Bg/imgAtker").GetComponent<Image>();
+            actionList3CharImgs[1] = list3.transform.Find("Character/Bg2/imgFoller").GetComponent<Image>();
+            actionList3CharImgs[2] = list3.transform.Find("Character/Bg3/imgFoller").GetComponent<Image>();
+            actionList3CharImgs[3] = list3.transform.Find("Character/Bg4/imgFoller").GetComponent<Image>();
+            actionList3EnemyImgs[0] = list3.transform.Find("Enemy/Bg/imgAtker").GetComponent<Image>();
+            actionList3EnemyImgs[1] = list3.transform.Find("Enemy/Bg2/imgFoller").GetComponent<Image>();
+            actionList3EnemyImgs[2] = list3.transform.Find("Enemy/Bg3/imgFoller").GetComponent<Image>();
+            actionList3EnemyImgs[3] = list3.transform.Find("Enemy/Bg4/imgFoller").GetComponent<Image>();
+
+            actionList4CharImgs[0] = list4.transform.Find("Character/Bg/imgAtker").GetComponent<Image>();
+            actionList4CharImgs[1] = list4.transform.Find("Character/Bg2/imgFoller").GetComponent<Image>();
+            actionList4CharImgs[2] = list4.transform.Find("Character/Bg3/imgFoller").GetComponent<Image>();
+            actionList4CharImgs[3] = list4.transform.Find("Character/Bg4/imgFoller").GetComponent<Image>();
+            actionList4EnemyImgs[0] = list4.transform.Find("Enemy/Bg/imgAtker").GetComponent<Image>();
+            actionList4EnemyImgs[1] = list4.transform.Find("Enemy/Bg2/imgFoller").GetComponent<Image>();
+            actionList4EnemyImgs[2] = list4.transform.Find("Enemy/Bg3/imgFoller").GetComponent<Image>();
+            actionList4EnemyImgs[3] = list4.transform.Find("Enemy/Bg4/imgFoller").GetComponent<Image>();
+            #endregion
             blockA = resSvc.LoadSprite(PathDefine.blockA, true);
             blockB = resSvc.LoadSprite(PathDefine.blockB, true);
             blockX = resSvc.LoadSprite(PathDefine.blockX, true);
             blockY = resSvc.LoadSprite(PathDefine.blockY, true);
         }
-        
+        public void ResetActLstImg()
+        {
+            for (int i = 0; i < actionList1CharImgs.Length; i++)
+            {
+                if(i == 0) { actionList1CharImgs[i].gameObject.SetActive(false); }
+                else { actionList1CharImgs[i].transform.parent.gameObject.SetActive(false);}
+            }
+            for (int i = 0; i < actionList2CharImgs.Length; i++)
+            {
+                if (i == 0) { actionList2CharImgs[i].gameObject.SetActive(false); }
+                else { actionList2CharImgs[i].transform.parent.gameObject.SetActive(false); }
+            }
+            for (int i = 0; i < actionList3CharImgs.Length; i++)
+            {
+                if (i == 0) { actionList3CharImgs[i].gameObject.SetActive(false); }
+                else { actionList3CharImgs[i].transform.parent.gameObject.SetActive(false); }
+            }
+            for (int i = 0; i < actionList4CharImgs.Length; i++)
+            {
+                if (i == 0) { actionList4CharImgs[i].gameObject.SetActive(false); }
+                else { actionList4CharImgs[i].transform.parent.gameObject.SetActive(false); }
+            }
+            for (int i = 0; i < actionList1EnemyImgs.Length; i++)
+            {
+                if (i == 0) { actionList1EnemyImgs[i].gameObject.SetActive(false); }
+                else { actionList1EnemyImgs[i].transform.parent.gameObject.SetActive(false); }
+            }
+            for (int i = 0; i < actionList2EnemyImgs.Length; i++)
+            {
+                if (i == 0) { actionList2EnemyImgs[i].gameObject.SetActive(false); }
+                else { actionList2EnemyImgs[i].transform.parent.gameObject.SetActive(false); }
+            }
+            for (int i = 0; i < actionList3EnemyImgs.Length; i++)
+            {
+                if (i == 0) { actionList3EnemyImgs[i].gameObject.SetActive(false); }
+                else { actionList3EnemyImgs[i].transform.parent.gameObject.SetActive(false); }
+            }
+            for (int i = 0; i < actionList4EnemyImgs.Length; i++)
+            {
+                if (i == 0) { actionList4EnemyImgs[i].gameObject.SetActive(false); }
+                else { actionList4EnemyImgs[i].transform.parent.gameObject.SetActive(false); }
+            }
+        }
         private void RegTouchEvts()
         {
             OnPointerDown(cancelArea.gameObject, evt =>
@@ -73,6 +171,10 @@ namespace TripleBattle
         private void AddBlockIcons()
         {
 
+        }
+        public void SetBattleRound(int roundNum)
+        {
+            txtRound.text = roundNum.ToString();
         }
         public void ShowUI()
         {
@@ -191,6 +293,115 @@ namespace TripleBattle
             }
         }
 
+        public void SetActLstCharImgs(int curActionIndex,int curImgIndex, Sprite portrait)
+        {
+            switch (curActionIndex)
+            {
+                case 1:
+                    if(curImgIndex == 0)
+                    {
+                        actionList1CharImgs[curImgIndex].gameObject.SetActive(true);
+                        actionList1CharImgs[curImgIndex].sprite = portrait;
+                    }
+                    else
+                    {
+                        actionList1CharImgs[curImgIndex].transform.parent.gameObject.SetActive(true);
+                        actionList1CharImgs[curImgIndex].sprite = portrait;
+                    }
+                    break;
+                case 2:
+                    if (curImgIndex == 0)
+                    {
+                        actionList2CharImgs[curImgIndex].gameObject.SetActive(true);
+                        actionList2CharImgs[curImgIndex].sprite = portrait;
+                    }
+                    else
+                    {
+                        actionList2CharImgs[curImgIndex].transform.parent.gameObject.SetActive(true);
+                        actionList2CharImgs[curImgIndex].sprite = portrait;
+                    }
+                    break;
+                case 3:
+                    if (curImgIndex == 0)
+                    {
+                        actionList3CharImgs[curImgIndex].gameObject.SetActive(true);
+                        actionList3CharImgs[curImgIndex].sprite = portrait;
+                    }
+                    else
+                    {
+                        actionList3CharImgs[curImgIndex].transform.parent.gameObject.SetActive(true);
+                        actionList3CharImgs[curImgIndex].sprite = portrait;
+                    }
+                    break;
+                case 4:
+                    if (curImgIndex == 0)
+                    {
+                        actionList4CharImgs[curImgIndex].gameObject.SetActive(true);
+                        actionList4CharImgs[curImgIndex].sprite = portrait;
+                    }
+                    else
+                    {
+                        actionList4CharImgs[curImgIndex].transform.parent.gameObject.SetActive(true);
+                        actionList4CharImgs[curImgIndex].sprite = portrait;
+                    }
+                    break;
+            }
+        }
+        public void SetActLstEnemyImgs(int curEnemyActID,int curImgIndex,Sprite portrait)
+        {
+            switch (curEnemyActID)
+            {
+                case 1:
+                    if (curImgIndex == 0)
+                    {
+                        actionList1EnemyImgs[curImgIndex].gameObject.SetActive(true);
+                        actionList1EnemyImgs[curImgIndex].sprite = portrait;
+                    }
+                    else
+                    {
+                        actionList1EnemyImgs[curImgIndex].transform.parent.gameObject.SetActive(true);
+                        actionList1EnemyImgs[curImgIndex].sprite = portrait;
+                    }
+                    break;
+                case 2:
+                    if (curImgIndex == 0)
+                    {
+                        actionList2EnemyImgs[curImgIndex].gameObject.SetActive(true);
+                        actionList2EnemyImgs[curImgIndex].sprite = portrait;
+                    }
+                    else
+                    {
+                        actionList2EnemyImgs[curImgIndex].transform.parent.gameObject.SetActive(true);
+                        actionList2EnemyImgs[curImgIndex].sprite = portrait;
+                    }
+                    break;
+                case 3:
+                    if (curImgIndex == 0)
+                    {
+                        actionList3EnemyImgs[curImgIndex].gameObject.SetActive(true);
+                        actionList3EnemyImgs[curImgIndex].sprite = portrait;
+                    }
+                    else
+                    {
+                        actionList3EnemyImgs[curImgIndex].transform.parent.gameObject.SetActive(true);
+                        actionList3EnemyImgs[curImgIndex].sprite = portrait;
+                    }
+                    break;
+                case 4:
+                    if (curImgIndex == 0)
+                    {
+                        actionList4EnemyImgs[curImgIndex].gameObject.SetActive(true);
+                        actionList4EnemyImgs[curImgIndex].sprite = portrait;
+                    }
+                    else
+                    {
+                        actionList4EnemyImgs[curImgIndex].transform.parent.gameObject.SetActive(true);
+                        actionList4EnemyImgs[curImgIndex].sprite = portrait;
+                    }
+                    break;
+            }
+        }
+
         public void PressBtnA()
         {
             BattleSys.Instance.ClickBlockRuletteBtn(BlockType.A);
@@ -206,6 +417,10 @@ namespace TripleBattle
         public void PressBtnY()
         {
             BattleSys.Instance.ClickBlockRuletteBtn(BlockType.Y);
+        }
+        public void StartBattle()
+        {
+            BattleSys.Instance.StartBattle();
         }
     }
 }

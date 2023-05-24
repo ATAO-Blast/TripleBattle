@@ -11,5 +11,9 @@ namespace TripleBattle
             resSvc = ResSvc.Instance;
             timerSvc = TimerSvc.Instance;
         }
+        public void SkillAttack(EntityCharacter character, int skillID)
+        {
+
+        }
     }
 }

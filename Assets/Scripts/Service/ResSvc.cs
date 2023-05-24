@@ -21,18 +21,38 @@ namespace TripleBattle
         }
         public void AsyncLoadScene(string sceneName, Action onSceneLoaded)
         {
+            StartCoroutine(LoadScene(sceneName, onSceneLoaded));
+            //GameRoot.Instance.SetLoadingWnd(true);
+            //AsyncOperation handler = SceneManager.LoadSceneAsync(sceneName);
+            //prgCB = () =>
+            //{
+            //    if (handler.isDone)
+            //    {
+            //        GameRoot.Instance.SetLoadingWnd(false);
+            //        onSceneLoaded?.Invoke();
+            //        handler = null;
+            //        prgCB = null;
+            //    }
+            //};
+        }
+        IEnumerator LoadScene(string sceneName,Action onSceneLoaded)
+        {
+            yield return null;
+            AsyncOperation asyncOperation = SceneManager.LoadSceneAsync(sceneName);
+            asyncOperation.allowSceneActivation = false;
+            asyncOperation.completed += ap => { GameRoot.Instance.SetLoadingWnd(false); onSceneLoaded?.Invoke(); };
             GameRoot.Instance.SetLoadingWnd(true);
-            AsyncOperation handler = SceneManager.LoadSceneAsync(sceneName);
-            prgCB = () =>
+            while (!asyncOperation.isDone)
             {
-                if (handler.isDone)
+                if (asyncOperation.progress >= 0.9f)
                 {
-                    GameRoot.Instance.SetLoadingWnd(false);
-                    onSceneLoaded?.Invoke();
-                    handler = null;
-                    prgCB = null;
+                    yield return new WaitForSeconds(2f);
+                    asyncOperation.allowSceneActivation = true;
+                    //GameRoot.Instance.SetLoadingWnd(false);
+                    //onSceneLoaded?.Invoke();
                 }
-            };
+                yield return null;
+            }
         }
         private Dictionary<string,AudioClip> audioCaches = new Dictionary<string,AudioClip>();
         public AudioClip LoadAudio(string path, bool cache = false)

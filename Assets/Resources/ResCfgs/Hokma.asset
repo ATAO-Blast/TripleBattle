@@ -22,4 +22,4 @@ MonoBehaviour:
     def: 15
     shield: 100
     maxShield: 100
-  portrait: {fileID: 21300000, guid: 36e952c38a5da1b49b13b9d3668aae81, type: 3}
+  portrait: {fileID: 426088316, guid: 62fb2883008234544b2ac611e276dd88, type: 3}

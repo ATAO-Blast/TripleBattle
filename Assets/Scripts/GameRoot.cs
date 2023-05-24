@@ -152,6 +152,18 @@ namespace TripleBattle
         {
             dynamicWnd.AddHpItemInfo(key, trans, hp, shield);
         }
+        public void SetHPBarInfo(string key, float hp)
+        {
+            dynamicWnd.SetHPBarInfo(key, hp);
+        }
+        public void SetShieldBarInfo(string key, float shield)
+        {
+            dynamicWnd.SetShieldBarInfo(key, shield);
+        }
+        public void ClearBars()
+        {
+            dynamicWnd.ClearBars();
+        }
         #endregion
 #if UNITY_EDITOR
         private void OnGUI()

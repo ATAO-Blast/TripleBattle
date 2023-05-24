@@ -37,6 +37,14 @@ namespace TripleBattle
         {
             battleWnd.SetWndState(isActive);
         }
+        public void HideBattleWnd()
+        {
+            battleWnd.HideUI();
+        }
+        public void ShowBattleWnd()
+        {
+            battleWnd.ShowUI();
+        }
         public void AddBlockIcon(Transform trans,BlockType blockType)
         {
             battleWnd.AddBlockItemIcon(trans, blockType);
@@ -63,6 +71,26 @@ namespace TripleBattle
         public void ClickBlockRuletteBtn(BlockType blockType)
         {
             battleMgr.RemoveCurBlock(blockType);
+        }
+        public void ResetActionListImages()
+        {
+            battleWnd.ResetActLstImg();
+        }
+        public void SetAcionListCharImgs(int curActionIndex, int curImgIndex, Sprite portrait)
+        {
+            battleWnd.SetActLstCharImgs(curActionIndex, curImgIndex, portrait);
+        }
+        public void SetAcionListEnemyImgs(int curEnemyActID, int curImgIndex, Sprite portrait)
+        {
+            battleWnd.SetActLstEnemyImgs(curEnemyActID, curImgIndex, portrait);
+        }
+        public void SetBattleRoundNum(int roundNum)
+        {
+            battleWnd.SetBattleRound(roundNum);
+        }
+        public void StartBattle()
+        {
+            battleMgr.StartBattle();
         }
     }
 }

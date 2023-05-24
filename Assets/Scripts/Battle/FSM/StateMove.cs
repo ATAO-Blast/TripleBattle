@@ -14,7 +14,7 @@ namespace TripleBattle
 
         public void Process(EntityBase entity, params object[] args)
         {
-            
+            //entity.SetAnimAct(2);
         }
     }
 }

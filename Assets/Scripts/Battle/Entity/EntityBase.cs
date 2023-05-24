@@ -1,3 +1,5 @@
+using System.Collections;
+
 namespace TripleBattle
 {
     public abstract class EntityBase
@@ -24,7 +26,7 @@ namespace TripleBattle
                 entityProps = value;
             }
         }
-        public int HP
+        public virtual int HP
         {
             get { return hp; }
             set 
@@ -33,7 +35,7 @@ namespace TripleBattle
                 hp = value; 
             }
         }
-        public int Shield
+        public virtual int Shield
         {
             get { return shield; }
             set 
@@ -55,9 +57,9 @@ namespace TripleBattle
         {
             stateMgr.ChangeStates(this, AniState.Born, null);
         }
-        public void Attack(int skillID)//可能直接引用配置
+        public void Attack()//可能直接引用配置
         {
-            stateMgr.ChangeStates(this, AniState.Attack, skillID);
+            stateMgr.ChangeStates(this, AniState.Attack, null);
         }
         public void Move()
         {

@@ -28,12 +28,19 @@ namespace TripleBattle
                 itemBarsDic.Add(key, itb);
             }
         }
-        public void SetBarInfo(string key,float hp,float shield)
+        public void SetHPBarInfo(string key,float hp)
         {
             ItemBar itemBar;
             if (itemBarsDic.TryGetValue(key, out itemBar))
             {
                 itemBar.SetHp(hp);
+            }
+        }
+        public void SetShieldBarInfo(string key,float shield)
+        {
+            ItemBar itemBar;
+            if (itemBarsDic.TryGetValue(key, out itemBar))
+            {
                 itemBar.SetShield(shield);
             }
         }

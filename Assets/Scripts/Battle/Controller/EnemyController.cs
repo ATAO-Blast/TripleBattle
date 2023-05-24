@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace TripleBattle
 {
-    public class EnenyController : Controller
+    public class EnemyController : Controller
     {
         [SerializeField] GameObject charFX;
         public override void Init()

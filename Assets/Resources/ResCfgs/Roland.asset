@@ -15,10 +15,11 @@ MonoBehaviour:
   enemyData:
     id: 0
     name: Roland
+    enemyType: 0
     hp: 1300
     maxHp: 1300
     atk: 30
     def: 20
     shield: 100
     maxShield: 100
-  portrait: {fileID: 21300000, guid: 41ca2b7dd5746b94da2cb765e952c9c1, type: 3}
+  portrait: {fileID: -1678385190, guid: 300fdd831a9fcd94689f69b846db6ca8, type: 3}

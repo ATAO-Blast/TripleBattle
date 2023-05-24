@@ -1101,9 +1101,9 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1369350162}
-  - {fileID: 839248883}
   - {fileID: 1414590168}
   - {fileID: 280785150}
+  - {fileID: 839248883}
   - {fileID: 888781449}
   m_Father: {fileID: 241899136}
   m_RootOrder: 2
@@ -1195,7 +1195,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 752585959015029559, guid: 5d1c7415289036c439e7bd7c6e083ddf, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 752585959015029559, guid: 5d1c7415289036c439e7bd7c6e083ddf, type: 3}
       propertyPath: m_AnchorMax.x
@@ -1418,6 +1418,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 2277798406914682421, guid: 435c8cd7685144e4391c59c757324ce5, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2277798406933327582, guid: 435c8cd7685144e4391c59c757324ce5, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -1460,7 +1464,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2277798407404094017, guid: 435c8cd7685144e4391c59c757324ce5, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2277798407404094017, guid: 435c8cd7685144e4391c59c757324ce5, type: 3}
       propertyPath: m_AnchorMax.x
@@ -1595,6 +1599,34 @@ PrefabInstance:
       value: TripleBattle.BattleWnd, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2277798407741172300, guid: 435c8cd7685144e4391c59c757324ce5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2277798407837163192, guid: 435c8cd7685144e4391c59c757324ce5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2277798407837163192, guid: 435c8cd7685144e4391c59c757324ce5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2277798407837163192, guid: 435c8cd7685144e4391c59c757324ce5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 280785151}
+    - target: {fileID: 2277798407837163192, guid: 435c8cd7685144e4391c59c757324ce5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2277798407837163192, guid: 435c8cd7685144e4391c59c757324ce5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: StartBattle
+      objectReference: {fileID: 0}
+    - target: {fileID: 2277798407837163192, guid: 435c8cd7685144e4391c59c757324ce5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: TripleBattle.BattleWnd, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2277798407837163192, guid: 435c8cd7685144e4391c59c757324ce5, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
@@ -2015,7 +2047,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9097133181132716065, guid: 71ebcde5bcdb5bf499abf1f50203804d, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9097133181132716065, guid: 71ebcde5bcdb5bf499abf1f50203804d, type: 3}
       propertyPath: m_AnchorMax.x
